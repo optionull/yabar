@@ -9,9 +9,10 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 
-# The sub-path GitHub Pages serves from (mpdreamz.github.io/yabar). The landing page's <base href> and the
-# workflow's prefix: input must agree with it, and nothing but this check would notice if they drifted.
-path_prefix="yabar"
+# The sub-path the site is served from. It is empty: GitHub Pages serves it from the root of yabar.optionull.app. The
+# landing page's <base href> and the workflow's prefix: input must agree with it, and nothing but this check would
+# notice if they drifted.
+path_prefix=""
 landing="docs/yabar-landing.html"
 workflow=".github/workflows/docs.yml"
 expected_base="/"
@@ -62,8 +63,14 @@ cp install.sh "$out/install.sh"
 echo "docs: built $out (landing page applied)"
 
 [[ "${1:-}" == "--noserve" ]] && exit 0
-# Served from a folder named like the prefix, so the site's absolute links resolve as they will on GitHub Pages.
-serve="$(mktemp -d)"
-ln -s "$root/$out" "$serve/$path_prefix"
-echo "docs: serving http://localhost:4000/$path_prefix/"
+# Served from a folder named like the prefix (the root when there is none), so the site's absolute links resolve as they
+# will on GitHub Pages.
+if [[ -n "$path_prefix" ]]; then
+  serve="$(mktemp -d)"
+  ln -s "$root/$out" "$serve/$path_prefix"
+  echo "docs: serving http://localhost:4000/$path_prefix/"
+else
+  serve="$root/$out"
+  echo "docs: serving http://localhost:4000/"
+fi
 cd "$serve" && exec python3 -m http.server 4000

@@ -163,7 +163,7 @@ enum Shots {
                     frame: browser,
                     app: "Safari",
                     title: "Docs",
-                    kind: .browser(address: "mpdreamz.github.io/yabar")
+                    kind: .browser(address: "yabar.optionull.app")
                 ),
                 .init(
                     frame: stackFrame,
@@ -206,7 +206,7 @@ enum Shots {
         let gap: CGFloat = 8
         let kinds: [(String, String, Desktop.Kind)] = [
             ("Ghostty", "~/Projects/yabar", .terminal(lines: terminalLines)),
-            ("Safari", "Docs", .browser(address: "mpdreamz.github.io/yabar")),
+            ("Safari", "Docs", .browser(address: "yabar.optionull.app")),
             ("Notes", "Today", .notes), ("Music", "Music", .music),
         ]
         func scene(_ frames: [NSRect], focused: Int, name: String) throws {
@@ -433,7 +433,7 @@ enum Shots {
                 .font: NSFont.systemFont(ofSize: 30, weight: .medium),
                 .foregroundColor: NSColor(white: 0.82, alpha: 1), .paragraphStyle: line,
             ]).draw(in: NSRect(x: 82, y: 400, width: 520, height: 90))
-            NSAttributedString(string: "mpdreamz.github.io/yabar", attributes: [
+            NSAttributedString(string: "yabar.optionull.app", attributes: [
                 .font: NSFont.monospacedSystemFont(ofSize: 18, weight: .regular), .foregroundColor: Brand.teal,
             ]).draw(at: NSPoint(x: 84, y: 530))
         }
