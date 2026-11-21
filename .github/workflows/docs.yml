@@ -1,7 +1,8 @@
 name: docs
 
 # The docs (docs-builder) with the landing page over their home page, published to GitHub Pages at
-# https://mpdreamz.github.io/yabar/. scripts/docs.sh builds the same thing locally (mise run docs).
+# https://yabar.optionull.app/ (the root of the domain, so no
+# path prefix). scripts/docs.sh builds the same thing locally (mise run docs).
 on:
   push:
     branches: [main]
@@ -30,8 +31,6 @@ jobs:
 
       - name: Build documentation
         uses: elastic/docs-builder@main
-        with:
-          prefix: yabar
 
       # Same overrides as scripts/docs.sh, in the same order.
       - name: Use the landing page
