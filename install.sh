@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install or update Yabar: curl -fsSL https://raw.githubusercontent.com/mpdreamz/yabar/main/install.sh | sh
+# Install or update Yabar: curl -fsSL https://raw.githubusercontent.com/optionull/yabar/main/install.sh | sh
 #
 # Downloads the latest release (or YABAR_VERSION=0.1.0), checks its sha256, and puts Yabar.app in /Applications, or
 # ~/Applications when /Applications is not writable (YABAR_APP_DIR overrides both; YABAR_DOWNLOAD_BASE downloads from
@@ -7,7 +7,7 @@
 # carries no quarantine flag, so it opens without a Gatekeeper prompt.
 set -eu
 
-repo="mpdreamz/yabar"
+repo="optionull/yabar"
 asset="Yabar-arm64.zip"
 
 fail() {

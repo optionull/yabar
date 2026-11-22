@@ -7,16 +7,16 @@
 <p align="center"><b>Spaces, stacks and tabs for <a href="https://github.com/asmvik/yabai">yabai</a>, in the menu bar.</b></p>
 
 <p align="center">
-  <a href="https://github.com/mpdreamz/yabar/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/mpdreamz/yabar?color=2EE6C5&label=release"></a>
+  <a href="https://github.com/optionull/yabar/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/optionull/yabar?color=2EE6C5&label=release"></a>
   <img alt="macOS 15+, Apple Silicon" src="https://img.shields.io/badge/macOS-15%2B%20·%20Apple%20Silicon-4C7DFF">
   <img alt="For yabai" src="https://img.shields.io/badge/for-yabai-2EE6C5">
-  <a href="LICENSE"><img alt="MIT licensed" src="https://img.shields.io/github/license/mpdreamz/yabar?color=4C7DFF"></a>
+  <a href="LICENSE"><img alt="MIT licensed" src="https://img.shields.io/github/license/optionull/yabar?color=4C7DFF"></a>
 </p>
 
 <p align="center">
-  <a href="https://mpdreamz.github.io/yabar/"><b>Website & docs</b></a> ·
-  <a href="https://github.com/mpdreamz/yabar/releases/latest/download/Yabar-arm64.zip">Download</a> ·
-  <a href="https://mpdreamz.github.io/yabar/reference/cli/">The yabar command</a>
+  <a href="https://yabar.optionull.app/"><b>Website & docs</b></a> ·
+  <a href="https://github.com/optionull/yabar/releases/latest/download/Yabar-arm64.zip">Download</a> ·
+  <a href="https://yabar.optionull.app/reference/cli/">The yabar command</a>
 </p>
 
 ![Yabar's tabs over a stack of terminals beside a browser, notes and music, the spaces in the menu bar](docs/images/shots/landing/hero.jpg)
@@ -46,10 +46,10 @@
 ## Install
 
 ```sh
-brew install --cask mpdreamz/tap/yabar
+brew install --cask optionull/tap/yabar
 ```
 
-or `curl -fsSL https://raw.githubusercontent.com/mpdreamz/yabar/main/install.sh | sh`. Apple Silicon, macOS 15+, and
+or `curl -fsSL https://raw.githubusercontent.com/optionull/yabar/main/install.sh | sh`. Apple Silicon, macOS 15+, and
 yabai running. yabai's scripting addition is optional (clicking an empty space, scratchpads).
 
 Then bind it in skhd:
@@ -63,7 +63,7 @@ lcmd + shift - space : yabar launcher
 lcmd - 0 : yabar focus attention
 ```
 
-Everything else is in the **[docs](https://mpdreamz.github.io/yabar/)**.
+Everything else is in the **[docs](https://yabar.optionull.app/)**.
 
 ## Build
 

@@ -5,13 +5,13 @@ description: Install Yabar with Homebrew or the install script.
 # Installation
 
 ```sh
-brew install --cask mpdreamz/tap/yabar
+brew install --cask optionull/tap/yabar
 ```
 
 or
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/mpdreamz/yabar/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/optionull/yabar/main/install.sh | sh
 ```
 
 Yabar is for Apple Silicon Macs on macOS 15 or later. The cask also puts the `yabar` command on your `PATH`, for

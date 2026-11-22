@@ -1,6 +1,6 @@
 name: tap
 
-# Writes a published release's cask to mpdreamz/homebrew-tap. The release workflow does this itself after
+# Writes a published release's cask to optionull/homebrew-tap. The release workflow does this itself after
 # publishing; run this to redo it (a failed push, a new HOMEBREW_TAP_TOKEN, a changed packaging/homebrew/yabar.rb).
 on:
   workflow_dispatch:
