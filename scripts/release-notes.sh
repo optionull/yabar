@@ -15,7 +15,7 @@ set -euo pipefail
 tag="${1:?usage: scripts/release-notes.sh <tag> <build> [earlier]}"
 build="${2:?build}"
 earlier="${3:-20}"
-repo="${GITHUB_REPOSITORY:-mpdreamz/yabar}"
+repo="${GITHUB_REPOSITORY:-optionull/yabar}"
 [[ "$build" =~ ^[0-9]+$ ]] || { echo "release-notes: build must be a number, got $build" >&2; exit 1; }
 
 # One release's notes, as GitHub renders them.

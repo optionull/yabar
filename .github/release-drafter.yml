@@ -41,5 +41,5 @@ autolabeler:
 template: |
   $CHANGES
 
-  **Install:** `brew install --cask mpdreamz/tap/yabar`, or
-  `curl -fsSL https://raw.githubusercontent.com/mpdreamz/yabar/main/install.sh | sh`. Yabar updates itself.
+  **Install:** `brew install --cask optionull/tap/yabar`, or
+  `curl -fsSL https://raw.githubusercontent.com/optionull/yabar/main/install.sh | sh`. Yabar updates itself.

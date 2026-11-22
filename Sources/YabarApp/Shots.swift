@@ -97,8 +97,8 @@ enum Shots {
             .init(
                 frame: browserFrame,
                 app: "Safari",
-                title: "mpdreamz/yabar",
-                kind: .browser(address: "github.com/mpdreamz/yabar")
+                title: "optionull/yabar",
+                kind: .browser(address: "github.com/optionull/yabar")
             ),
             .init(frame: notesFrame, app: "Notes", title: "Today", kind: .notes),
             .init(frame: musicFrame, app: "Music", title: "Music", kind: .music),
@@ -285,7 +285,7 @@ enum Shots {
             .init(
                 id: "w3",
                 kind: .window,
-                title: "mpdreamz/yabar",
+                title: "optionull/yabar",
                 subtitle: "Safari",
                 badges: ["web"],
                 icon: .bundle(path: app("Safari")),

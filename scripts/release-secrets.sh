@@ -13,7 +13,7 @@
 # keychain imports, and checked by signing a file with it in a throwaway keychain before anything is uploaded.
 set -euo pipefail
 
-repo="mpdreamz/yabar"
+repo="optionull/yabar"
 openssl=/usr/bin/openssl # LibreSSL: reads what `security export` writes without -legacy, writes what `security import` reads
 p8="" key_id="" issuer_id="" sparkle=false
 root="$(cd "$(dirname "$0")/.." && pwd)"

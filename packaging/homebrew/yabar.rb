@@ -1,13 +1,13 @@
-# TEMPLATE: the Homebrew cask, as scripts/bump-tap.sh writes it to mpdreamz/homebrew-tap on every release, with the
+# TEMPLATE: the Homebrew cask, as scripts/bump-tap.sh writes it to optionull/homebrew-tap on every release, with the
 # version and the zip's sha256 filled in. Change it here, not in the tap. (bump-tap.sh replaces this header.)
 cask "yabar" do
   version "__VERSION__"
   sha256 "__SHA256__"
 
-  url "https://github.com/mpdreamz/yabar/releases/download/v#{version}/Yabar-arm64.zip"
+  url "https://github.com/optionull/yabar/releases/download/v#{version}/Yabar-arm64.zip"
   name "Yabar"
   desc "Menu bar spaces and window stack indicators for yabai"
-  homepage "https://github.com/mpdreamz/yabar"
+  homepage "https://yabar.optionull.app/"
 
   livecheck do
     url :url
